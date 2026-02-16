@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+Valentina Biviano
+Web 190
+Module 5 Lab - Part 2
+16 Feb. 2026
+-->
+<html lang="en">
+<head>
+    <title>Module 5: Grid Column and Row</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* Part 1 */
+        .grid-container-1 {
+            display: grid;
+            grid-template-columns: 50px 50px 50px; /* Fixed width to show extra space */
+            justify-content: space-around; 
+            background-color: mediumblue;
+            padding: 10px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        /* Part 2 */
+        .grid-container-2 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            align-content: center; 
+            background-color: cornflowerblue;
+            padding: 10px;
+            height: 300px;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .grid-container-1 > div, .grid-container-2 > div {
+            background-color: white;
+            border: 1px solid #000;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .grid-container-2 > div {
+            background-color: lemonchiffon;
+        }
+
+        h1 { border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <h1>Web 190 - Module 5 Lab, part 2</h1>
+
+    <h2>Grid Area #1: This container demonstrates the justify-content - space-around property</h2>
+    
+    <div class="grid-container-1">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+    </div>
+
+    <p>
+        The justify-content - space-around property distributes the grid items horizontally so that there is an 
+        equal amount of space around each column. This creates a balanced look across the width of the blue container.
+    </p>
+
+    <hr>
+
+    <h2>Grid Area #2: This container demonstrates the align-content - center property</h2>
+
+    <div class="grid-container-2">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+    </div>
+
+    <p>
+        The align-content - center property takes all the grid rows as a single block and places them right in the 
+        middle of the container vertically. This is useful when the container is taller than the content inside it.
+    </p>
+
+</body>
+</html>
