@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+Valentina Biviano
+WEB 190
+Module 9 Part 2
+3/11/2026
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample responsive webpage layout.">
+
+    <title>Responsive Layout Practice</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #835f39;
+        }
+        #wrapper {
+            width: 82%;
+            margin: auto;
+            border: 2px solid #5b4f42;
+            background-color: #6a553d;
+            padding: 10px;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #f2e0cc;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 10px;
+        }
+        h1 {
+            color: #f2e0cc;
+        }
+        .left {
+            flex: 5/8;
+            background-color: #f2e0cc;
+            padding: 20px;
+        }
+        .right {
+            flex: 3/8;
+            background-color: #f2e0cc;
+            padding: 20px;
+        }
+        .left img {
+            width: 260px;
+            height: auto;
+            float: right;
+            margin-left: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+
+        @media (max-width: 525px) {
+
+            #wrapper {
+                width: 100%;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <header>
+        <h1>WEB 190 - Lab 9-2</h1>
+    </header>
+
+    <nav>
+        <a href="#">Nav 1</a>
+        <a href="#">Nav 2</a>
+        <a href="#">Nav 3</a>
+        <a href="#">Nav 4</a>
+    </nav>
+
+    <main>
+
+        <div class="left">
+            <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2026-02/punch-the-monkey-lc-260220-537566.jpg" alt="Punch the Monkey">
+            <h2>Left Area</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet varius cursus, 
+            velit neque facilisis nunc, sed dignissim magna urna at velit. Vivamus id risus nec justo egestas 
+            tincidunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet varius cursus, 
+            velit neque facilisis nunc, sed dignissim magna urna at velit. Vivamus id risus nec justo egestas 
+            tincidunt.</p>
+        </div>
+
+        <div class="right">
+            <h2>Right Area</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Suspendisse potenti. 
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc sit amet varius cursus, 
+            velit neque facilisis nunc, sed dignissim magna urna at velit. Vivamus id risus nec justo egestas 
+            tincidunt.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Valentina Biviano</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
