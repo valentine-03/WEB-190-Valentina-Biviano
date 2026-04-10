@@ -1,0 +1,182 @@
+/* Color Palette & Variables */
+:root {
+    --pastel-cream: #FFF9F0;
+    --pastel-pink: #FADADD;
+    --pastel-green: #D4E9D5;
+    --text-brown: #5D4037;
+    --accent-gold: #D4AF37;
+}
+
+body {
+    background-color: var(--pastel-cream);
+    color: var(--text-brown);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, .brand-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.lead {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 0;
+}
+
+.menu-list a:hover {
+    color: #e1a15c;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.brand-name {
+    font-size: 1.8rem;
+    display: block;
+    line-height: 1;
+    color: var(--text-brown);
+}
+
+.brand-sub {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: var(--accent-gold);
+}
+
+.nav-link {
+    color: var(--text-brown) !important;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+#menuCarousel {
+    max-width: 400px;   /* this is overall size */
+    margin: 0 auto;
+}
+
+.carousel-item img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Gray boxes from wireframe */
+.placeholder-img {
+    background-color: #E0E0E0;
+    border: 2px dashed #BDBDBD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #757575;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.hero-placeholder {
+    background-image: url("hero-img.jpg");
+    height: 500px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed; /* parallax */
+}
+
+.about-placeholder {
+    background-image: url("sfogliatella.jpg");
+    height: 300px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 20px;
+
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease;
+}
+
+/* when it becomes visible */
+.about-placeholder.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sm-placeholder { 
+    height: 80px; 
+    width: 100%; 
+}
+
+/* Sections & Buttons */
+.welcome-box {
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.btn-custom {
+    background-color: var(--pastel-green);
+    color: var(--text-brown);
+    border: none;
+    padding: 10px 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: var(--pastel-pink);
+    transform: translateY(-2px);
+}
+
+.short-hr {
+    width: 50px;
+    border: 2px solid var(--accent-gold);
+    opacity: 1;
+}
+
+.bg-light-pastel {
+    background-color: #fcf4f5;
+}
+
+.content-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    height: 100%;
+}
+
+/* List Styling */
+ul.menu-list, ul.services-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.menu-list li::before, ul.services-list li::before {
+    content: "•";
+    color: var(--accent-gold);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+}
+
+footer {
+    border-top: 1px solid var(--pastel-pink);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
