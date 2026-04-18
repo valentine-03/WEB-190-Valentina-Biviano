@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+Valentina Biviano
+WEB190 - Mod 13 
+4/17/2026
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3.CSS Grid</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body class="w3-light-grey">
+
+    <div class="w3-container">
+
+        <header class="w3-container w3-deep-purple w3-center w3-padding-32">
+            <h1>Mini Web Page - WEB190 Lab 13!</h1>
+        </header>
+
+        <nav class="w3-bar w3-brown">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small">Products</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small">About</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+        </nav>
+
+        <div id="demo" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
+            <a href="#" class="w3-bar-item w3-button">Products</a>
+            <a href="#" class="w3-bar-item w3-button">About</a>
+            <a href="#" class="w3-bar-item w3-button">Contact</a>
+        </div>
+
+        <div class="w3-row w3-white w3-margin-top">
+            <div class="w3-col l2 m3 s12 w3-container w3-border">
+                <h3>Left</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            </div>
+            <div class="w3-col l8 m6 s12 w3-container w3-border">
+                <h3>Center</h3>
+                <img src="e635a9183ffd42466d692a99c1b17059.jpg" class="w3-round w3-image w3-right w3-margin" alt="mountain" style="width:200px">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            </div>
+            <div class="w3-col l2 m3 s12 w3-container w3-border">
+                <h3>Right</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            </div>
+        </div>
+
+        <div class="w3-row w3-white w3-margin-top">
+            <div class="w3-col l6 m4 s12 w3-container w3-border">
+                <h2>Bottom Left</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            </div>
+            <div class="w3-col l6 m8 s12 w3-container w3-border">
+                <h2>Bottom Right</h2>
+                <table class="w3-table w3-striped w3-bordered w3-margin-bottom">
+                    <tr class="w3-deep-purple">
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Gloves</td>
+                        <td>$28</td>
+                    </tr>
+                    <tr>
+                        <td>Jacket</td>
+                        <td>$54</td>
+                    </tr>
+                    <tr>
+                        <td>Scarf</td>
+                        <td>$23</td>
+                    </tr>
+                    <tr>
+                        <td>Cap</td>
+                        <td>$32</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <footer class="w3-container w3-brown w3-center w3-margin-top w3-padding-16">
+            <p>Copyright&copy; 2026 Valentina Biviano WEB190</p>
+        </footer>
+
+    </div> 
+    <script>
+        function myFunction() {
+            var x = document.getElementById("demo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+</html>
