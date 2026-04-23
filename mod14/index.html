@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Valentina Biviano
+WEB190 - Mod 14 
+4/21/2026
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB 190 - Module 14</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<style>
+    .images {
+        width: 200px;
+    }
+</style>
+
+<body>
+
+    <div class="w3-container">
+
+        <header class="w3-container w3-teal">
+            <h1>WEB190 Lab 14!</h1>
+        </header>
+
+        <div class="w3-bar w3-red">
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="form.html" class="w3-bar-item w3-button w3-hide-small">Form</a>
+            <a href="accordion.html" class="w3-bar-item w3-button w3-hide-small">Accordion</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <div id="demo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+            <a href="form.html" class="w3-bar-item w3-button">Form</a>
+            <a href="accordion.html" class="w3-bar-item w3-button">Accordion</a>
+        </div>
+
+
+        <!-- Slideshow -->
+        <div class="w3-content w3-display-container images">
+            <img class="mySlides" src="img_snowtops.jpg" style="width:100%">
+            <img class="mySlides" src="img_nature.jpg" style="width:100%">
+            <img class="mySlides" src="img_mountains.jpg" style="width:100%">
+
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+
+        <footer class="w3-container w3-teal w3-center">
+            <p>Copyright&copy; 2026 Valentina Biviano WEB190</p>
+        </footer>
+
+    </div> 
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+        }
+</script>
+</body>
+</html>
