@@ -38,13 +38,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Reservation form (demo only)
-  var form = document.getElementById('reservation-form');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Thank you! Your reservation request has been received. We will contact you to confirm.');
-      form.reset();
-    });
-  }
-});
